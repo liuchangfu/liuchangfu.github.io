@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+
+<script>!function(){var e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,t=localStorage.getItem("use-color-scheme")||"auto";("dark"===t||e&&"light"!==t)&&document.documentElement.classList.toggle("dark",!0)}()</script>
+
+<meta charset="utf-8" >
+
+<title>typora-vue-theme主题介绍</title>
+<meta name="keywords" content="typora-vue-theme主题介绍, Hexo">
+<meta name="description" content="该值主要用于 seo 优化，设置后页面 description 将显示该值，未设置则取 summary 或截取部分文章内容">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="/style/main.css">
+
+
+<link rel="stylesheet" href="/style/jquery.fancybox.min.css">
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+  <body>
+    <div id="app" class="main">
+
+<div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://liuchangfu.github.io">
+        <img class="avatar" src="/images/avatar.png" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://liuchangfu.github.io">
+        <h1 class="site-title">Hexo</h1>
+      </a>
+    </div>
+    <div class="right">
+        <i class="icon menu-switch icon-menu-outline" ></i>
+    </div>
+  </div>
+</div>
+
+<div class="menu-container" style="height: 0;opacity: 0;">
+<nav class="menu-list">
+  
+    
+      <a href="/" class="menu purple-link">
+        首页
+      </a>
+    
+  
+    
+      <a href="/tags" class="menu purple-link">
+        标签
+      </a>
+    
+  
+    
+      <a href="/archives" class="menu purple-link">
+        归档
+      </a>
+    
+  
+    
+      <a href="/about" class="menu purple-link">
+        关于
+      </a>
+    
+  
+</nav>
+</div>
+
+
+
+  <div class="content-container">
+    <div class="post-detail">
+      
+        <div class="feature-container" style="background-image: url('/images/8.jpg')">
+        </div>
+      
+      <h2 class="post-title">typora-vue-theme主题介绍</h2>
+      <div class="post-info post-detail-info">
+        <span><i class="icon icon-calendar-outline"></i> 2022-11-09</span>
+        
+          <span>
+          <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="/tags/Typora/">
+              Typora
+                
+                  ，
+                
+              </a>
+            
+              <a href="/tags/Markdown/">
+              Markdown
+                
+              </a>
+            
+          </span>
+        
+      </div>
+      <div class="post-content-wrapper">
+        <div class="post-content">
+          <p>hexo new  ‘文章’ –创建文章</p>
+<p>hexo new page ‘归档’ –创建页面<br>然后打开主题的配置文件_config.yml，在菜单属性menu中的添加</p>
+<p>//清理<br><code>hexo clean</code><br>//构建静态文件<br><code>hexo g</code><br>//上传至仓库(上传报错多位网络原因，多上传几次即可)<br><code>hexo d</code></p>
+<p>//新建草稿文件<br><code>hexo new draft b</code><br>//预览草稿文件<br><code>hexo server --draft</code><br>//发布草稿<br><code>hexo publish b</code></p>
+<table>
+<thead>
+<tr>
+<th>配置选项</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>title</td>
+<td>Markdown 的文件标题	文章标题，强烈建议填写此选项</td>
+<td></td>
+</tr>
+<tr>
+<td>date</td>
+<td>文件创建时的日期时间	发布时间，强烈建议填写此选项，且最好保证全局唯一</td>
+<td></td>
+</tr>
+<tr>
+<td>img</td>
+<td>featureImages 中的某个值</td>
+<td>文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: <a target="_blank" rel="noopener" href="http://xxx.com/xxx.jpg">http://xxx.com/xxx.jpg</a></td>
+</tr>
+<tr>
+<td>top</td>
+<td>true</td>
+<td>推荐文章（文章是否置顶），如果 top 值为 true，则会作为首页推荐文章</td>
+</tr>
+<tr>
+<td>hide</td>
+<td>false</td>
+<td>隐藏文章，如果hide值为true，则文章不会在首页显示</td>
+</tr>
+<tr>
+<td>cover</td>
+<td>false</td>
+<td>v1.0.2版本新增，表示该文章是否需要加入到首页轮播封面中</td>
+</tr>
+<tr>
+<td>toc</td>
+<td>true</td>
+<td>是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 config.yml 中激活了 toc 选项</td>
+</tr>
+<tr>
+<td>summary</td>
+<td></td>
+<td>无	文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字</td>
+</tr>
+<tr>
+<td>description</td>
+<td>无</td>
+<td>用于搜索引擎的 description，如果没值则取 summary 或 截取文章内容</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>无	文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类</td>
+<td></td>
+</tr>
+<tr>
+<td>tags</td>
+<td>无</td>
+<td>文章标签，一篇文章可以多个标签</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>文章标题</td>
+<td>文章关键字，SEO 时需要</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>文章分类	当前文章的所属分类 用户分类归档页</td>
+<td></td>
+</tr>
+<tr>
+<td>tags</td>
+<td>文章标签</td>
+<td>可以有多个</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>登录操作权限</th>
+<th>正常</th>
+<th>正常</th>
+<th>冻结</th>
+<th>冻结</th>
+<th>禁止</th>
+<th>禁止</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>登录资格</td>
+<td>允许</td>
+<td>禁止</td>
+<td>允许</td>
+<td>禁止</td>
+<td>允许</td>
+<td>禁止</td>
+</tr>
+<tr>
+<td>是否显示</td>
+<td>显示</td>
+<td>不显示</td>
+<td>显示</td>
+<td>不显示</td>
+<td>不显示</td>
+<td>不显示</td>
+</tr>
+</tbody></table>
+<pre><code class="def">    c = a + b
+    return c
+</code></pre>
+<p><img src="/images/8.jpg" alt="8.jpg"></p>
+<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
+</blockquote>
+
+
+<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+
+
+<blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a target="_blank" rel="noopener" href="http://devdocs.io/">http://devdocs.io</a></p>
+<footer><strong>@DevDocs</strong><cite><a target="_blank" rel="noopener" href="https://twitter.com/devdocs/status/356095192085962752">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
+
+
+<pre><code>alert('Hello World!');</code></pre>
+
+
+<pre><code>[rectangle setX: 10 y: 10 width: 20 height: 20];</code></pre>
+
+
+<h1 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h1><p>只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，<br>但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说 Foo, Bar 不等于 Bar, Foo；而标签没有顺序和层次。</p>
+<pre><code>categories:
+- Diary
+tags:
+- PS3
+- Games
+</code></pre>
+<pre><code>def test(a,b):
+	c = a + b
+	return c</code></pre>
+        </div>
+        <div class="top-div">
+          <ol class="top-box"><li class="top-box-item top-box-level-1"><a class="top-box-link" href="#%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE"><span class="top-box-text">分类和标签</span></a></li></ol>
+        </div>
+      </div>
+    </div>
+
+    
+      <div class="next-post">
+        <a class="purple-link" href="/2022/11/09/wo-de-di-yi-pian-bo-ke/">
+          <h3 class="post-title">
+            下一篇：我的第一篇博客
+          </h3>
+        </a>
+      </div>
+    
+  </div>
+
+
+
+
+<footer>
+<div class="site-footer">
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/f-dong" target="_blank">
+          <i class="icon icon-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  
+    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> <a href="https://github.com/f-dong/hexo-theme-minimalism" target="_blank">Theme</a>
+  
+  
+  
+  
+  
+  
+</div>
+</footer>
+
+
+      </div>
+      
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.fancybox.min.js"></script>
+
+
+
+    <script>window.is_post = true;</script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+    </div>
+  </body>
+</html>
+
