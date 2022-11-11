@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-tw,en,zh-CN,default">
+  <head>
+    
+
+<script>!function(){var e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,t=localStorage.getItem("use-color-scheme")||"auto";("dark"===t||e&&"light"!==t)&&document.documentElement.classList.toggle("dark",!0)}()</script>
+
+<meta charset="utf-8" >
+
+<title>介绍</title>
+<meta name="keywords" content="介绍, MyBlog">
+<meta name="description" content="seldom 提供的能力
+seldom 是基于 unittest 的自动化测试框架。
+
+seldom 与 单元测试框架对比seldom VS unittest VS pytest VS ...
+seldom 是一个自动化测试框架，集成诸多测">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="/style/main.css">
+
+
+<link rel="stylesheet" href="/style/jquery.fancybox.min.css">
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="MyBlog" type="application/atom+xml">
+</head>
+  <body>
+    <div id="app" class="main">
+
+<div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://liuchangfu.github.io">
+        <img class="avatar" src="/images/avatar.png" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://liuchangfu.github.io">
+        <h1 class="site-title">MyBlog</h1>
+      </a>
+    </div>
+    <div class="right">
+        <i class="icon menu-switch icon-menu-outline" ></i>
+    </div>
+  </div>
+</div>
+
+<div class="menu-container" style="height: 0;opacity: 0;">
+<nav class="menu-list">
+  
+    
+      <a href="/" class="menu purple-link">
+        首页
+      </a>
+    
+  
+    
+      <a href="/tags" class="menu purple-link">
+        标签
+      </a>
+    
+  
+    
+      <a href="/archives" class="menu purple-link">
+        归档
+      </a>
+    
+  
+    
+      <a href="/about" class="menu purple-link">
+        关于
+      </a>
+    
+  
+</nav>
+</div>
+
+
+
+  <div class="content-container">
+    <div class="post-detail">
+      
+      <h2 class="post-title">介绍</h2>
+      <div class="post-info post-detail-info">
+        <span><i class="icon icon-calendar-outline"></i> 2022-11-10</span>
+        
+          <span>
+          <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="/tags/seldom/">
+              seldom
+                
+              </a>
+            
+          </span>
+        
+      </div>
+      <div class="post-content-wrapper">
+        <div class="post-content">
+          <h1 id="seldom-提供的能力"><a href="#seldom-提供的能力" class="headerlink" title="seldom 提供的能力"></a>seldom 提供的能力</h1><blockquote>
+<p>seldom 是基于 unittest 的自动化测试框架。</p>
+</blockquote>
+<h2 id="seldom-与-单元测试框架对比"><a href="#seldom-与-单元测试框架对比" class="headerlink" title="seldom 与 单元测试框架对比"></a>seldom 与 单元测试框架对比</h2><p><code>seldom</code> VS <code>unittest</code> VS <code>pytest</code> VS <code>...</code></p>
+<p>seldom 是一个自动化测试框架，集成诸多测试相关的库，定位全功能自动化测试框架。拿seldom 与 pytest对比，就像拿一台<code>电脑</code>与一颗<code>CPU</code> 进行比较，<code>CPU</code>是电脑的核心，但不是全部，只有CPU 无法打游戏，就像只用pytest 无法做Web测试自动测试一样。</p>
+<h1 id="seldom特点"><a href="#seldom特点" class="headerlink" title="seldom特点"></a>seldom特点</h1><p>提供的功能:</p>
+<ul>
+<li>生成随机测试数据</li>
+<li>用例依赖</li>
+<li>用例分类标签</li>
+<li>发送邮件、钉钉消息等</li>
+<li>日志打印</li>
+<li>缓存cache</li>
+<li>命令行工具</li>
+<li>强大的数据驱动（JSON/YAML/CSV/EXCEL）</li>
+<li>HTML/XML报告</li>
+<li>失败重跑&amp;截图</li>
+<li>数据库操作（MySQL/sqlite3/Mongodb）</li>
+<li>丰富的断言</li>
+</ul>
+<p>支持测试类型:</p>
+<ul>
+<li>Web UI测试： 集成selenium。</li>
+<li>App UI测试： 集成appium。</li>
+<li>HTTP接口测试：集成reqests。</li>
+</ul>
+<h1 id="seldom-的设计理念"><a href="#seldom-的设计理念" class="headerlink" title="seldom 的设计理念"></a>seldom 的设计理念</h1><p>简单一句话就是回到最初写代码的样子。</p>
+<p>自动化测试框架很多，只有在测试领域有一个比较奇怪的现象，如何用不写代码的方式解决自动化问题。为此，我们发明了用特定领域语言写用例，发明了用 excel 写用例，发明了用 YAML/JSON 写用例。这些方案看似简化了用例的编写，但是，会让解决复杂的问题变得更复杂。比如实现个分支判断/循环，传递参数，调用封装的步骤，编程语言中用 if/for 、变量、函数就实现了，但是用非编程语言的方式写用例处理起来就很麻烦。最终，并不能完全脱离编程，那么为什么不一开始就选择一个编程框架呢？</p>
+<p>然而，seldom的定位是尽量用简单的设计去解决复杂问题，例如 Flask、requests、yagmail…等，这些框架/库都有一个共同的特点，用简单的方式去解决复杂的问题，在编程语言这个层面，并不会给你太多限制，你可以完全使用它，也可以只用一部分，也可以平滑的实现它不支持的功能。</p>
+<p>seldom的目标以就让你用最少的代码编写自动化测试用例，当遇到seldom没有的功能，你可以方便的进行扩展。这就是seldom的设计理念</p>
+<pre><code>&gt; seldom --help
+Usage: seldom [OPTIONS]
+
+  seldom CLI.
+
+Options:
+  --version                       Show version.
+  -P, --project TEXT              Create an Seldom automation test project.
+  -cc, --clear-cache BOOLEAN      Clear all caches of seldom.
+  -p, --path TEXT                 Run test case file path.
+  -c, --collect / -nc, --no-collect
+                                  Collect project test cases. Need the
+                                  `--path`.
+  -l, --level [data|method]       Parse the level of use cases. Need the
+                                  --path.
+  -j, --case-json TEXT            Test case files. Need the `--path`.
+  -e, --env TEXT                  Set the Seldom run environment `Seldom.env`.
+  -b, --browser [chrome|firefox|ie|edge|safari]
+                                  The browser that runs the Web UI automation
+                                  tests. Need the `--path`.
+  -u, --base-url TEXT             The base-url that runs the HTTP automation
+                                  tests. Need the `--path`.
+  -d, --debug / -nd, --no-debug   Debug mode. Need the `--path`.
+  -rr, --rerun INTEGER            The number of times a use case failed to run
+                                  again. Need the `--path`.
+  -r, --report TEXT               Set the test report for output. Need the
+                                  `--path`.
+  -m, --mod TEXT                  Run tests modules, classes or even
+                                  individual test methods from the command
+                                  line.
+  -i, --install [chrome|firefox|ie|edge]
+                                  Install the browser driver.
+  -h2c, --har2case TEXT           HAR file converts an interface test case.
+  --help                          Show this message and exit.
+</code></pre>
+<pre><code>import seldom
+
+
+class YouTest(seldom.TestCase):
+
+    def test_case(self):
+        """a simple test case """
+        ...
+
+
+if __name__ == '__main__':
+    seldom.main()
+</code></pre>
+
+        </div>
+        <div class="top-div">
+          <ol class="top-box"><li class="top-box-item top-box-level-1"><a class="top-box-link" href="#seldom-%E6%8F%90%E4%BE%9B%E7%9A%84%E8%83%BD%E5%8A%9B"><span class="top-box-text">seldom 提供的能力</span></a><ol class="top-box-child"><li class="top-box-item top-box-level-2"><a class="top-box-link" href="#seldom-%E4%B8%8E-%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E5%AF%B9%E6%AF%94"><span class="top-box-text">seldom 与 单元测试框架对比</span></a></li></ol></li><li class="top-box-item top-box-level-1"><a class="top-box-link" href="#seldom%E7%89%B9%E7%82%B9"><span class="top-box-text">seldom特点</span></a></li><li class="top-box-item top-box-level-1"><a class="top-box-link" href="#seldom-%E7%9A%84%E8%AE%BE%E8%AE%A1%E7%90%86%E5%BF%B5"><span class="top-box-text">seldom 的设计理念</span></a></li></ol>
+        </div>
+      </div>
+    </div>
+
+    
+      <div class="next-post">
+        <a class="purple-link" href="/2022/11/10/test2/">
+          <h3 class="post-title">
+            下一篇：test2
+          </h3>
+        </a>
+      </div>
+    
+  </div>
+
+
+
+
+<footer>
+<div class="site-footer">
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/f-dong" target="_blank">
+          <i class="icon icon-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  
+    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> <a href="https://github.com/f-dong/hexo-theme-minimalism" target="_blank">Theme</a>
+  
+  
+  
+  
+  
+  
+</div>
+</footer>
+
+
+      </div>
+      
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.fancybox.min.js"></script>
+
+
+
+    <script>window.is_post = true;</script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+    </div>
+  </body>
+</html>
+

@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>MyBlog</title>
   
   
   <link href="https://liuchangfu.github.io/atom.xml" rel="self"/>
   
   <link href="https://liuchangfu.github.io/"/>
-  <updated>2022-11-10T08:43:51.796Z</updated>
+  <updated>2022-11-10T09:37:25.687Z</updated>
   <id>https://liuchangfu.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>想名字好难</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>介绍</title>
+    <link href="https://liuchangfu.github.io/2022/11/10/jie-shao/"/>
+    <id>https://liuchangfu.github.io/2022/11/10/jie-shao/</id>
+    <published>2022-11-10T09:26:54.000Z</published>
+    <updated>2022-11-10T09:37:25.687Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;seldom-提供的能力&quot;&gt;&lt;a href=&quot;#seldom-提供的能力&quot; class=&quot;headerlink&quot; title=&quot;seldom 提供的能力&quot;&gt;&lt;/a&gt;seldom 提供的能力&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;seldom 是基于</summary>
+        
+      
+    
+    
+    
+    <category term="开源工具" scheme="https://liuchangfu.github.io/categories/%E5%BC%80%E6%BA%90%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="seldom" scheme="https://liuchangfu.github.io/tags/seldom/"/>
+    
+  </entry>
   
   <entry>
     <title>test2</title>
@@ -46,7 +72,7 @@
     <link href="https://liuchangfu.github.io/2022/11/09/shi-li-wen-zhang/"/>
     <id>https://liuchangfu.github.io/2022/11/09/shi-li-wen-zhang/</id>
     <published>2022-11-09T07:46:00.000Z</published>
-    <updated>2022-11-10T08:22:48.219Z</updated>
+    <updated>2022-11-10T08:57:11.383Z</updated>
     
     
     <summary type="html">该值主要用于 seo 优化，设置后页面 description 将显示该值，未设置则取 summary 或截取部分文章内容</summary>
