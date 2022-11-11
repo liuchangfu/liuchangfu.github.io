@@ -9,7 +9,12 @@
 
 <title>test2</title>
 <meta name="keywords" content="test2, MyBlog">
-<meta name="description" content="这是一个标题">
+<meta name="description" content="这是一个标题
+
+
+
+		
+		var gitalkConfig = {"clientID":"9cdc51cb148f6a1f481d","clientSecret":"7082c236ab4dacecfd57efb78b262dc34f8">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -99,6 +104,15 @@
       <div class="post-content-wrapper">
         <div class="post-content">
           <h1 id="这是一个标题"><a href="#这是一个标题" class="headerlink" title="这是一个标题"></a>这是一个标题</h1>
+<div id="gitalk-container"></div>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+		<script>
+		var gitalkConfig = {"clientID":"9cdc51cb148f6a1f481d","clientSecret":"7082c236ab4dacecfd57efb78b262dc34f877535","repo":"https://github.com/liuchangfu/liuchangfu.github.io","owner":"liuchangfu","admin":["liuchangfu"],"distractionFreeMode":false};
+	    gitalkConfig.id = md5(location.pathname);
+		var gitalk = new Gitalk(gitalkConfig);
+	    gitalk.render("gitalk-container");
+	    </script>
         </div>
         <div class="top-div">
           <ol class="top-box"><li class="top-box-item top-box-level-1"><a class="top-box-link" href="#%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E6%A0%87%E9%A2%98"><span class="top-box-text">这是一个标题</span></a></li></ol>
